@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.MainPage">
+
+    <StackLayout Margin="0.50">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Nombre"
+                 VerticalTextAlignment="Center"
+                 FontAttributes="Bold"
+                 FontSize="18"/>
+            <Entry x:Name="txtNombre"
+                       Placeholder="Nombre"
+                       Keyboard="Text"
+                       HorizontalOptions="FillAndExpand"
+                       />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Apellido"
+                 VerticalTextAlignment="Center"
+                 FontAttributes="Bold"
+                 FontSize="18"/>
+            <Entry x:Name="txtApellido"
+                       Placeholder="Apellido"
+                       Keyboard="Text"
+                       HorizontalOptions="FillAndExpand"
+                       />
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Email"
+                 VerticalTextAlignment="Center"
+                 FontAttributes="Bold"
+                 FontSize="18"/>
+            <Entry x:Name="txtEmail"
+                       Placeholder="Email"
+                       Keyboard="Email"
+                       HorizontalOptions="FillAndExpand"
+                       />
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Teléfono"
+                 VerticalTextAlignment="Center"
+                 FontAttributes="Bold"
+                 FontSize="18"/>
+            <Entry x:Name="txtTelefono"
+                       Placeholder="Telefono"
+                       Keyboard="Telephone"
+                       HorizontalOptions="FillAndExpand"  />
+        </StackLayout>
+
+        <Button x:Name="Boton" Text="Continuar"
+                BorderRadius="10"
+                BorderWidth="1"
+                BorderColor="Black"
+                TextColor="White"
+                Margin="30,0,30,0"
+                BackgroundColor="Navy"
+                Clicked="Continuar"
+                />
+    </StackLayout>
+
+</ContentPage>
